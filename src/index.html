@@ -71,7 +71,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.jpg"
+                src="assets/jc-profile.png"
                 alt="Profile Image"
               />
             </div>
@@ -112,7 +112,7 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Katipunan Coop </h3>
                 <div>
                   <p class="mb-4">
                     Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
@@ -124,9 +124,9 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://github.com/Althia2004/KatipunanCoop"
                 >
-                  See Live
+                  Source Code
                 </a>
                 <a
                   rel="noreferrer"
@@ -134,27 +134,43 @@
                   class="cta-btn text-color-main"
                   href="#!"
                 >
-                  Source Code
+                  See Live
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+                <div class="thumbnail rounded js-tilt" data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
+                  <a href="#" id="openGalleryBtn">
+                    <img src="assets/KatipunanCoop_Screenshot_1.png" alt="Click to view image gallery" class="img-fluid" />
+                    <div class="gallery-overlay-hint">Click to view project gallery</div>
+                  </a>
+                </div>
+
+                <div id="lightboxModal" class="lightbox-modal">
+                  <span class="close-lightbox" id="closeGalleryBtn">&times;</span>
+                  
+                  <div class="lightbox-content">
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_1.png" alt="Gallery Image 1">
+                    </div>
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_2.png" alt="Gallery Image 2">
+                    </div>
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_3.png" alt="Gallery Image 3">
+                    </div>
+
+                    <a class="lightbox-prev" id="lightboxPrev">&#10094;</a>
+                    <a class="lightbox-next" id="lightboxNext">&#10095;</a>
+
+                    <div class="lightbox-thumbnails">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_1.png" data-thumb-index="1" alt="Thumbnail 1">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_2.png" data-thumb-index="2" alt="Thumbnail 2">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_3.png" data-thumb-index="3" alt="Thumbnail 3">
+                    </div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -172,6 +188,7 @@
                     you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
                   </p>
                 </div>
+                
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -180,6 +197,7 @@
                 >
                   See Live
                 </a>
+                
                 <a
                   rel="noreferrer"
                   target="_blank"
