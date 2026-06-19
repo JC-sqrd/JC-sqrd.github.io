@@ -128,14 +128,14 @@
                 >
                   Source Code
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
                   href="#!"
                 >
                   See Live
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -210,21 +210,37 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+                <div class="thumbnail rounded js-tilt" data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
+                  <a href="#" id="openGalleryBtn">
+                    <img src="assets/KatipunanCoop_Screenshot_1.png" alt="Click to view image gallery" class="img-fluid" />
+                    <div class="gallery-overlay-hint">Click to view project gallery</div>
+                  </a>
+                </div>
+
+                <div id="lightboxModal" class="lightbox-modal">
+                  <span class="close-lightbox" id="closeGalleryBtn">&times;</span>
+                  
+                  <div class="lightbox-content">
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_1.png" alt="Gallery Image 1">
+                    </div>
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_2.png" alt="Gallery Image 2">
+                    </div>
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_3.png" alt="Gallery Image 3">
+                    </div>
+
+                    <a class="lightbox-prev" id="lightboxPrev">&#10094;</a>
+                    <a class="lightbox-next" id="lightboxNext">&#10095;</a>
+
+                    <div class="lightbox-thumbnails">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_1.png" data-thumb-index="1" alt="Thumbnail 1">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_2.png" data-thumb-index="2" alt="Thumbnail 2">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_3.png" data-thumb-index="3" alt="Thumbnail 3">
+                    </div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -261,21 +277,37 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
+                <div class="thumbnail rounded js-tilt" data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5">
+                  <a href="#" id="openGalleryBtn">
+                    <img src="assets/KatipunanCoop_Screenshot_1.png" alt="Click to view image gallery" class="img-fluid" />
+                    <div class="gallery-overlay-hint">Click to view project gallery</div>
+                  </a>
+                </div>
+
+                <div id="lightboxModal" class="lightbox-modal">
+                  <span class="close-lightbox" id="closeGalleryBtn">&times;</span>
+                  
+                  <div class="lightbox-content">
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_1.png" alt="Gallery Image 1">
+                    </div>
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_2.png" alt="Gallery Image 2">
+                    </div>
+                    <div class="lightbox-slide">
+                      <img src="assets/KatipunanCoop_Screenshot_3.png" alt="Gallery Image 3">
+                    </div>
+
+                    <a class="lightbox-prev" id="lightboxPrev">&#10094;</a>
+                    <a class="lightbox-next" id="lightboxNext">&#10095;</a>
+
+                    <div class="lightbox-thumbnails">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_1.png" data-thumb-index="1" alt="Thumbnail 1">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_2.png" data-thumb-index="2" alt="Thumbnail 2">
+                      <img class="demo-thumb" src="assets/KatipunanCoop_Screenshot_3.png" data-thumb-index="3" alt="Thumbnail 3">
+                    </div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -316,7 +348,7 @@
           <a rel="noreferrer" href="#!" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/jc-sqrd" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -328,30 +360,6 @@
           © 2021 - Template developed by
           <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
             >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
           >
         </p>
       </div>
