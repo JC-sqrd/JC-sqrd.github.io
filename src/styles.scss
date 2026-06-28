@@ -134,3 +134,26 @@
     border-radius: 4px;
   }
 }
+
+/* ==========================================================================
+   Project Tech Stack Badges
+   ========================================================================== */
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+  .project-tech-badge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 0.85rem;
+    background-color: rgba(2, 170, 176, 0.08); /* Transparent tint matching your signature color */
+    color: #02aab0; 
+    border-radius: 50px;
+    border: 1px solid rgba(2, 170, 176, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
